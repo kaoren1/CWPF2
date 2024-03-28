@@ -17,7 +17,7 @@
                 <RowDefinition />
                 <RowDefinition Height="25"/>
             </Grid.RowDefinitions>
-            <Button x:Name="Delete" Content="Удалить запись" Grid.Column="0" Grid.Row="17"/>
+            <Button x:Name="Update" Content="Изменить запись" Grid.Column="0" Grid.Row="17" Click="Update_Click"/>
             <ListBox x:Name="List" Grid.Column="0" Grid.Row="1" SelectionChanged="List_SelectionChanged"/>
             <DatePicker x:Name="Date" Grid.Row="0" Grid.ColumnSpan="2" VerticalAlignment="Center" SelectedDateChanged="Date_SelectedDateChanged"></DatePicker>
         </Grid>
@@ -36,7 +36,7 @@
             <TextBox x:Name="Name" Grid.Column="1" Grid.Row="2"></TextBox>
             <TextBlock Text="Описание: " Grid.Column="1" Grid.Row="3" VerticalAlignment="Center"></TextBlock>
             <TextBox x:Name="Description" Grid.Column="1" Grid.Row="4"></TextBox>
-            <Button x:Name="Create" Content="Создать" Grid.Column="1" Grid.Row="17" Click="Create_Click"></Button>
+            <Button x:Name="Create" Content="Создать" Grid.Column="1" Grid.Row="17" Click="Add_Click"></Button>
         </Grid>
     </Grid>
 </Window>
